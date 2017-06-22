@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>org.antframework.template</groupId>
-            <artifactId>template-biz</artifactId>
+            <artifactId>template-web</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
