@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.antframework.boot</groupId>
+        <artifactId>ant-boot-starter-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-  <groupId>org.antframework.template</groupId>
-  <artifactId>template</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <groupId>org.antframework.template</groupId>
+    <artifactId>template</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-  <name>template</name>
-  <url>http://maven.apache.org</url>
+    <name>template</name>
+    <url>http://antframework.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <modules>
+        <module>template-facade</module>
+        <module>template-common</module>
+        <module>template-dal</module>
+        <module>template-integration</module>
+        <module>template-biz</module>
+        <module>template-web</module>
+        <module>template-assemble</module>
+        <module>template-test</module>
+    </modules>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-  <modules>
-    <module>template-facade</module>
-    <module>template-dal</module>
-    <module>template-integration</module>
-    <module>template-common</module>
-    <module>template-biz</module>
-    <module>template-web</module>
-    <module>template-assemble</module>
-    <module>template-test</module>
-  </modules>
+    <dependencyManagement>
+        <dependencies>
+            <!--在此进行依赖版本管理-->
+        </dependencies>
+    </dependencyManagement>
 </project>
