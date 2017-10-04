@@ -11,11 +11,20 @@
 
     <artifactId>template-test</artifactId>
 
+    <properties>
+        <!--install时跳过本模块-->
+        <maven.install.skip>true</maven.install.skip>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.antframework.template</groupId>
             <artifactId>template-assemble</artifactId>
             <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
     </dependencies>
 </project>

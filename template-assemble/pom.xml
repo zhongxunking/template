@@ -11,6 +11,11 @@
 
     <artifactId>template-assemble</artifactId>
 
+    <properties>
+        <!--install时跳过本模块-->
+        <maven.install.skip>true</maven.install.skip>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.antframework.template</groupId>
@@ -22,6 +27,7 @@
     <build>
         <finalName>template</finalName>
         <plugins>
+            <!--打包成可执行jar-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

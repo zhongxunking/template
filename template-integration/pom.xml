@@ -11,15 +11,16 @@
 
     <artifactId>template-integration</artifactId>
 
+    <properties>
+        <!--install时跳过本模块-->
+        <maven.install.skip>true</maven.install.skip>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.antframework.template</groupId>
             <artifactId>template-common</artifactId>
             <version>${project.parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.antframework.boot</groupId>
-            <artifactId>ant-boot-starter-dubbo</artifactId>
         </dependency>
     </dependencies>
 </project>

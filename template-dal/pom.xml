@@ -11,6 +11,11 @@
 
     <artifactId>template-dal</artifactId>
 
+    <properties>
+        <!--install时跳过本模块-->
+        <maven.install.skip>true</maven.install.skip>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.antframework.template</groupId>
@@ -23,8 +28,8 @@
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <groupId>org.antframework.boot</groupId>
+            <artifactId>ant-boot-starter-jpa</artifactId>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
