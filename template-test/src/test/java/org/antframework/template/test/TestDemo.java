@@ -8,11 +8,13 @@
  */
 package org.antframework.template.test;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
  * 单元测试demo
  */
+@Ignore
 public class TestDemo extends AbstractTest {
 
     @Test
