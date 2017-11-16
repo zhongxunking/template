@@ -15,7 +15,7 @@ import org.junit.Test;
  * 单元测试demo
  */
 @Ignore
-public class TestDemo extends AbstractTest {
+public class DemoTest extends AbstractTest {
 
     @Test
     public void testDemo() {
