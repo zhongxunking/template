@@ -22,6 +22,10 @@
             <artifactId>template-web</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.antframework.boot</groupId>
+            <artifactId>ant-boot-starter-log</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
