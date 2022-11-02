@@ -1,7 +1,7 @@
 # 模板工程介绍
 创建项目命令模板：
 ```shell
-mvn archetype:generate -DarchetypeGroupId=org.antframework.template -DarchetypeArtifactId=template-archetype -DarchetypeVersion=1.0.0.RELEASE -DgroupId="被创建项目的groupId" -DartifactId="被创建项目的artifactId" -Dversion="被创建项目的版本号"
+mvn archetype:generate -DarchetypeGroupId=org.antframework.template -DarchetypeArtifactId=template-archetype -DarchetypeVersion=2.7.4 -DgroupId="被创建项目的groupId" -DartifactId="被创建项目的artifactId" -Dversion="被创建项目的版本号"
 ```
 参数说明：
 ```shell
@@ -11,7 +11,7 @@ mvn archetype:generate -DarchetypeGroupId=org.antframework.template -DarchetypeA
 ```
 例如：
 ```shell
-mvn archetype:generate -DarchetypeGroupId=org.antframework.template -DarchetypeArtifactId=template-archetype -DarchetypeVersion=1.0.0.RELEASE -DgroupId=org.antframework.demo -DartifactId=demo -Dversion=1.0-SNAPSHOT
+mvn archetype:generate -DarchetypeGroupId=org.antframework.template -DarchetypeArtifactId=template-archetype -DarchetypeVersion=2.7.4 -DgroupId=org.antframework.demo -DartifactId=demo -Dversion=1.0-SNAPSHOT
 ```
 
 ## 各模块介绍
