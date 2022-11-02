@@ -24,7 +24,11 @@
         </dependency>
         <dependency>
             <groupId>org.antframework.boot</groupId>
-            <artifactId>ant-boot-starter-log</artifactId>
+            <artifactId>ant-boot-starter-lang</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.antframework.boot</groupId>
+            <artifactId>ant-boot-starter-logging</artifactId>
         </dependency>
     </dependencies>
 

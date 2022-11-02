@@ -1,4 +1,4 @@
-/* 
+/*
  * 作者：钟勋 (e-mail:zhongxunking@163.com)
  */
 
@@ -8,7 +8,7 @@
  */
 package org.antframework.template.test;
 
-import org.antframework.boot.core.Apps;
+import org.antframework.boot.lang.Apps;
 import org.antframework.template.assemble.Main;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -26,6 +26,6 @@ public class AbstractTest {
 
     static {
         // 设置使用环境
-        Apps.setProfileIfNotExists("dev");
+        Apps.setProfileIfAbsent("dev");
     }
 }
