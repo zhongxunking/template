@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>template-assemble</artifactId>
+    <artifactId>template-assembly</artifactId>
 
     <properties>
         <!--deploy时跳过本模块-->

@@ -6,7 +6,7 @@
  * 修订记录:
  * @author 钟勋 2017-06-22 11:34 创建
  */
-package org.antframework.template.assemble;
+package org.antframework.template;
 
 import org.antframework.boot.lang.AntBootApplication;
 import org.antframework.boot.lang.Apps;

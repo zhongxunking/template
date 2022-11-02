@@ -22,7 +22,7 @@
         <module>template-integration</module>
         <module>template-biz</module>
         <module>template-web</module>
-        <module>template-assemble</module>
+        <module>template-assembly</module>
         <module>template-test</module>
     </modules>
 

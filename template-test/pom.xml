@@ -19,7 +19,7 @@
     <dependencies>
         <dependency>
             <groupId>org.antframework.template</groupId>
-            <artifactId>template-assemble</artifactId>
+            <artifactId>template-assembly</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
