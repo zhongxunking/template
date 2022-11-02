@@ -9,7 +9,10 @@
 package org.antframework.template.biz.provider;
 
 import lombok.AllArgsConstructor;
+import org.antframework.common.util.facade.BizException;
+import org.antframework.common.util.facade.CommonResultCode;
 import org.antframework.common.util.facade.FacadeUtils;
+import org.antframework.common.util.facade.Status;
 import org.antframework.template.dal.dao.UserDao;
 import org.antframework.template.dal.entity.User;
 import org.antframework.template.facade.api.UserService;
@@ -30,8 +33,8 @@ public class UserServiceProvider implements UserService {
 
     @Override
     public FindUserResult findUser(FindUserOrder order) {
-        // 校验入参是否符合约定
-        order.check();
+        // 校验Order入参
+        checkOrder(order);
 
         // 从数据库查询用户
         User user = userDao.findByUserId(order.getUserId());
@@ -40,6 +43,16 @@ public class UserServiceProvider implements UserService {
         FindUserResult result = FacadeUtils.buildSuccess(FindUserResult.class);
         result.setUser(convert(user));
         return result;
+    }
+
+    // 校验Order入参
+    private void checkOrder(FindUserOrder order) {
+        try {
+            // 校验入参是否符合约定
+            order.check();
+        } catch (IllegalArgumentException e) {
+            throw new BizException(Status.FAIL, CommonResultCode.INVALID_PARAMETER.getCode(), CommonResultCode.INVALID_PARAMETER.getMessage() + "：" + e.getMessage());
+        }
     }
 
     // 转换
