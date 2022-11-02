@@ -25,6 +25,7 @@ public class UserServiceTest extends AbstractTest {
     @Autowired
     private UserService userService;
 
+    // 查找用户
     @Test
     public void testFindUser() {
         FindUserOrder order = new FindUserOrder();
