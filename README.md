@@ -11,15 +11,15 @@
     -Dversion 指定项目版本号
     
 例如：
-
-    mvn archetype:generate -DarchetypeGroupId=org.antframework.template -DarchetypeArtifactId=template-archetype -DarchetypeVersion=1.0.0.RELEASE -DgroupId=org.antframework.demo -DartifactId=demo -Dversion=1.0-SNAPSHOT
-
+```shell
+mvn archetype:generate -DarchetypeGroupId=org.antframework.template -DarchetypeArtifactId=template-archetype -DarchetypeVersion=1.0.0.RELEASE -DgroupId=org.antframework.demo -DartifactId=demo -Dversion=1.0-SNAPSHOT
+```
 
 ## 各模块介绍
-各模块依赖关系：
-test --> assembly --> web --> biz --> dal --> facade
-                                          --> common
-                                  --> integration --> common
+各模块依赖关系： 
+- test --> assembly --> web --> biz --> dal --> facade
+- dal --> common
+- biz  --> integration --> common
 
 以下介绍每个模块的作用，从底层模块到高层模块顺序介绍：
 
